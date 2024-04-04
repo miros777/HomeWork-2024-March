@@ -1,6 +1,7 @@
 .flex{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .block_font{
     background: #eeb3b3;
@@ -37,4 +38,20 @@
     font-family: "Indie Flower", cursive;
     font-weight: 400;
     font-style: normal;
+}
+
+/*lesson2.2*/
+.red-block{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: 0.5s;
+    margin: 50px;
+}
+.red-block:hover{
+    border-radius: 50%;
+    outline: 2px solid red;
+    background: yellowgreen;
+    transition: 1s ease-in;
+    cursor: pointer;
 }

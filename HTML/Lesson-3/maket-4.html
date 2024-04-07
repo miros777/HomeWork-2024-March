@@ -3,8 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            background: #D9D9D9;
+            height: 15vh;
+        }
+        main{
+            display: flex;
+            height: 75vh;
+        }
+        .sec-left{
+            background: #78786F;
+            width: 33.33vw;
+        }
+        .sec-center{
+            background: #61615C;
+            width: 33.33vw;
+        }
+        .sec-right{
+            background: #78786F;
+            width: 33.33vw;
+        }
+        footer{
+            background: #D9D9D9;
+            height: 10vh;
+        }
+        .bg-grey{
+            background: linear-gradient(0deg, #A5A5A3 0%, #A5A5A3 100%), linear-gradient(0deg, #979796 0%, #979796 100%), #979796;
+        }
+        .bg-light-grey{
+            background: linear-gradient(0deg, #BABAB9 0%, #BABAB9 100%), linear-gradient(0deg, #7F816A 0%, #7F816A 100%), #979796;
+        }
+        .bg-dark-grey{
+            background: #78786F;
+        }
+        .bg-haki{
+            background: #828569;
+        }
+        .height-33-vh{
+            height: 33.3vh;
+        }
+        .height-50-vh{
+            height: 50vh;
+        }
+        .d-column{
+            flex-direction: column;
+        }
+        .flex{
+            display: flex;
+        }
+    </style>
 </head>
 <body>
-
+<header></header>
+<main>
+    <section class="sec-left flex d-column">
+        <div class="bg-grey height-33-vh"></div>
+        <div class="bg-light-grey height-33-vh"></div>
+        <div class="bg-grey height-33-vh"></div>
+    </section>
+    <section class="sec-center"></section>
+    <section class="sec-right flex d-column">
+        <div class="bg-dark-grey height-50-vh"></div>
+        <div class="bg-haki height-50-vh"></div>
+    </section>
+</main>
+<footer></footer>
 </body>
 </html>

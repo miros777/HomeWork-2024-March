@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: "Open Sans", sans-serif;
+        }
+        .bg-light{
+            background: #26e1e1;
+        }
+        .bg-green{
+            background: #24cb12;
+        }
+        .bg-dark-red{
+            background: #b62604;
+        }
+        .height-100-vh{
+            height: 100vh;
+        }
+        section{
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        h2{
+            font-size: 30px;
+            margin: 0;
+        }
+        p{
+            font-size: 18px;
+            text-align: center;
+            padding: 0 50px;
+        }
+        .arrow-top, .arrow-down{
+            cursor: pointer;
+            width: 60px;
+            transition: 0.3s ease;
+            opacity: 0.7;
+        }
+        .arrow-down{
+            transform: rotate(180deg);
+            /*width: 60px;*/
+            /*transition: 0.5s ease;*/
+            /*opacity: 0.85;*/
+        }
+        .arrow-top:hover, .arrow-down:hover{
+            transition: 0.5s ease;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <section class="bg-light height-100-vh" id="first">
+        <div class="wrapper">
+            <h2>Section first</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos et magnam repellendus sunt! Assumenda explicabo nihil optio quia sapiente sint voluptates? Deserunt dolore eveniet iusto maxime odio quaerat, voluptates.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos et magnam repellendus sunt! Assumenda explicabo nihil optio quia sapiente sint voluptates? Deserunt dolore eveniet iusto maxime odio quaerat, voluptates.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos et magnam repellendus sunt! Assumenda explicabo nihil optio quia sapiente sint voluptates? Deserunt dolore eveniet iusto maxime odio quaerat, voluptates.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos et magnam repellendus sunt! Assumenda explicabo nihil optio quia sapiente sint voluptates? Deserunt dolore eveniet iusto maxime odio quaerat, voluptates.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos et magnam repellendus sunt! Assumenda explicabo nihil optio quia sapiente sint voluptates? Deserunt dolore eveniet iusto maxime odio quaerat, voluptates.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos et magnam repellendus sunt! Assumenda explicabo nihil optio quia sapiente sint voluptates? Deserunt dolore eveniet iusto maxime odio quaerat, voluptates.
+            </p>
+            <a href="#second"> <img src="images/top.png" alt="Top" class="arrow-down"></a>
+        </div>
+    </section>
+    <section class="bg-green height-100-vh" id="second">
+        <div class="wrapper">
+            <a href="#first"><img src="images/top.png" alt="Top" class="arrow-top"></a>
+            <h2>Section first</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos et magnam repellendus sunt! Assumenda explicabo nihil optio quia sapiente sint voluptates? Deserunt dolore eveniet iusto maxime odio quaerat, voluptates.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos et magnam repellendus sunt! Assumenda explicabo nihil optio quia sapiente sint voluptates? Deserunt dolore eveniet iusto maxime odio quaerat, voluptates.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos et magnam repellendus sunt! Assumenda explicabo nihil optio quia sapiente sint voluptates? Deserunt dolore eveniet iusto maxime odio quaerat, voluptates.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos et magnam repellendus sunt! Assumenda explicabo nihil optio quia sapiente sint voluptates? Deserunt dolore eveniet iusto maxime odio quaerat, voluptates.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos et magnam repellendus sunt! Assumenda explicabo nihil optio quia sapiente sint voluptates? Deserunt dolore eveniet iusto maxime odio quaerat, voluptates.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos et magnam repellendus sunt! Assumenda explicabo nihil optio quia sapiente sint voluptates? Deserunt dolore eveniet iusto maxime odio quaerat, voluptates.
+            </p>
+            <a href="#third"><img src="images/top.png" alt="Top" class="arrow-down"></a>
+        </div>
+    </section>
+    <section class="bg-dark-red height-100-vh" id="third">
+        <div class="wrapper">
+            <a href="#first"><img src="images/top.png" alt="Top" class="arrow-top"></a>
+            <h2>Section first</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos et magnam repellendus sunt! Assumenda explicabo nihil optio quia sapiente sint voluptates? Deserunt dolore eveniet iusto maxime odio quaerat, voluptates.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos et magnam repellendus sunt! Assumenda explicabo nihil optio quia sapiente sint voluptates? Deserunt dolore eveniet iusto maxime odio quaerat, voluptates.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos et magnam repellendus sunt! Assumenda explicabo nihil optio quia sapiente sint voluptates? Deserunt dolore eveniet iusto maxime odio quaerat, voluptates.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos et magnam repellendus sunt! Assumenda explicabo nihil optio quia sapiente sint voluptates? Deserunt dolore eveniet iusto maxime odio quaerat, voluptates.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos et magnam repellendus sunt! Assumenda explicabo nihil optio quia sapiente sint voluptates? Deserunt dolore eveniet iusto maxime odio quaerat, voluptates.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dignissimos et magnam repellendus sunt! Assumenda explicabo nihil optio quia sapiente sint voluptates? Deserunt dolore eveniet iusto maxime odio quaerat, voluptates.
+            </p>
+        </div>
+    </section>
+</body>
+</html>

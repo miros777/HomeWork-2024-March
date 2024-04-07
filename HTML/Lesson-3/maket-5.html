@@ -3,8 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            background: #D9D9D9;
+            height: 15vh;
+        }
+        main{
+            display: flex;
+            height: 85vh;
+        }
+        .sec-left{
+            background: linear-gradient(0deg, #A5A5A3 0%, #A5A5A3 100%), linear-gradient(0deg, #979796 0%, #979796 100%), #979796;
+            width: 50vw;
+        }
+        .sec-right{
+            width: 50vw;
+        }
+        .bg-dark-grey{
+            background: #78786F;
+        }
+        .bg-grey{
+            background: #4F504A;
+        }
+        .height-50-vh{
+            height: 50vh;
+        }
+        .d-column{
+            flex-direction: column;
+        }
+        .flex{
+            display: flex;
+        }
+    </style>
 </head>
 <body>
-
+<header></header>
+<main>
+    <section class="sec-left"></section>
+    <section class="sec-right flex d-column">
+        <div class="bg-dark-grey height-50-vh"></div>
+        <div class="bg-grey height-50-vh"></div>
+    </section>
+</main>
 </body>
 </html>

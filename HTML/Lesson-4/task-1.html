@@ -5,38 +5,81 @@
     <title>Landing page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
     <style>
-        body{
+        body {
             font-family: "KoHo", sans-serif;
             font-weight: 400;
             font-style: normal;
+            margin: 0;
+            padding: 0;
         }
-h3  {
-    color: #000;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 45px;
-    line-height: normal;
-}
-header span{
-    color: #000;
-    font-size: 25px;
-    line-height: normal;
-}
-header button{
-    width: 409px;
-    height: 76px;
-    border-radius: 5px;
-    border: 1px solid rgba(156, 152, 152, 0.10);
-    background: rgba(217, 217, 217, 0.60);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    color: #000;
-    font-family: "KoHo", sans-serif;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
+
+        /*HEADER************************************************/
+        header{
+            height: 100vh;
+            width: 100vw;
+            background-image: url("images/bg-top.png");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h3 {
+            color: #000;
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            font-size: 45px;
+            line-height: normal;
+            margin: 0;
+        }
+
+        header span {
+            color: #000;
+            font-size: 25px;
+            line-height: normal;
+            margin-top: 30px;
+        }
+
+        header button {
+            width: 409px;
+            height: 76px;
+            border-radius: 5px;
+            border: 1px solid rgba(156, 152, 152, 0.10);
+            background: rgba(217, 217, 217, 0.60);
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            color: #000;
+            font-family: "KoHo", sans-serif;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            cursor: pointer;
+            margin-top: 40px;
+        }
+        header button:hover {
+            background: #f56430;
+        }
+        .sec-left{
+            background-image: url("images/image 3.png");
+            background-size: cover;
+            width: 35vw;
+            height: 100%;
+        }
+        .sec-right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 35vw;
+            height: 100%;
+            background: #fff;
+        }
+        header div{
+            display: flex;
+            width: 70vw;
+            height: 40vh;
+        }
     </style>
 </head>
 <body>
@@ -46,7 +89,7 @@ header button{
         <section class="sec-right">
             <h3>Lorem ipsum</h3>
             <span>Lorem ipsum dolor sit amet</span>
-            <button></button>
+            <button>Button</button>
         </section>
     </div>
 </header>

@@ -73,11 +73,12 @@ header div{
 main{
     background-image: url("images/Rectangle 4.png");
     background-size: cover;
+    height: 100vh;
+    width: 100vw;
 }
 /*    VIDEO ******************************************/
 .video{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,8 +106,7 @@ main{
 }
 /*    PRODUCTS*/
 .products{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

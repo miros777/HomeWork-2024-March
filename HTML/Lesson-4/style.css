@@ -136,6 +136,7 @@ main{
 }
 .products button:hover {
     background: #f56430;
+    cursor: pointer;
 }
 .products img{
     margin: 25px 22px;

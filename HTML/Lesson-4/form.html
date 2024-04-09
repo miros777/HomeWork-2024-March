@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <title>Instagram</title>
     <style>
+        body{
+            font-family: "Open Sans", sans-serif;
+        }
         .wrapper-form{
-            width: 40vw;
-            height: 700px;
+            width: 700px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            /*justify-content: center;*/
-            margin: 0 auto;
-            border: 1px solid darkgray;
-            padding: 50px;
+            margin: 40px auto 0;
+            border: 2px solid #dddddd;
+            padding: 50px 100px;
+            box-sizing: border-box;
         }
         form, .footer-form{
             display: flex;
@@ -34,20 +36,74 @@
             margin-top: 70px;
         }
         input{
-            border: 1px solid darkgray;
-            border-radius: 3px;
+            border: 2px solid #dddddd;
+            border-radius: 5px;
             width: 100%;
-            height: 50px;
+            height: 70px;
             margin-top: 10px;
             padding: 10px 15px;
             font-size: 20px;
+            box-sizing: border-box;
         }
         input[type="submit"]{
             border: none;
-            background: dodgerblue;
-            border-radius: 10px;
-            color: #ffffff;
+            background: #53a6f7;
+            border-radius: 15px;
+            color: #fff;
             margin-top: 20px;
+            font-weight: 600;
+            height: 60px;
+        }
+        input[type="submit"]:hover{
+            background: #0c3a94;
+            cursor: pointer;
+        }
+        .footer-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .footer-form .login{
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            color: #105b9e;
+            font-weight: 700;
+            margin-top: 40px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .remember{
+            font-size: 18px;
+            color: #153393;
+            margin-top: 40px;
+        }
+        .login img{
+            width: 40px;
+            margin-right: 8px;
+        }
+        .footer-form span:first-child{
+            margin-top: 40px;
+            font-weight: 700;
+            color: #7a7a7a;
+            font-size: 24px;
+        }
+        .registration{
+            border: 2px solid #dddddd;
+            padding: 30px 20px;
+            margin: 20px auto;
+            width: 700px;
+            box-sizing: border-box;
+            font-size: 20px;
+        }
+        .registration a{
+            font-weight: 700;
+            color: #53a6f7;
+            margin-left: 8px;
+        }
+        .registration span{
+            color: #000000;
         }
     </style>
 </head>
@@ -55,21 +111,21 @@
 <div class="wrapper-form">
     <img src="images/inst.png" alt="Instagram" class="logo">
     <form>
-        <input type="text" placeholder="Номер телефону, ім'я користувача або e-mail">
+        <input type="text" placeholder="Номер телефону, ім'я користувача або e-mail...">
         <input type="password" placeholder="Пароль">
         <input type="submit" value="Увійти">
     </form>
     <div class="footer-form">
         <span>АБО</span>
-        <a href="https://www.facebook.com/"><img src="" alt="Facebook"><span>Увійти через Facebook</span></a>
-        <a href="https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzEyNjYwMzU4LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&ars=facebook_login">Забули пароль</a>
+        <a href="https://www.facebook.com/" class="login"><img src="images/icons8-facebook-48.png" alt="Facebook"><span>Увійти через Facebook</span></a>
+        <a href="https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzEyNjYwMzU4LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&ars=facebook_login" class="remember">Забули пароль?</a>
     </div>
 </div>
 
-<section class="registration">
+<div class="registration">
     <span>Не маєте облікового запису?</span>
     <a href="https://www.facebook.com/">Зареєструйтесь</a>
-</section>
+</div>
 
 </body>
 </html>

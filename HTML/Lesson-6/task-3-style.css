@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+            "header header header header"
+            "header-child header-child header-child right"
+            "small-1 small-2 small-3 right";
+    grid-template-rows: 333.33fr 333.33fr 333.33fr;
+    grid-template-columns: 5fr 5fr 5fr 5fr;
+}
+
+header, .header-child, .container > div, .right {
+    border: 1px solid black;
+    background: #ababab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    grid-area: header;
+}
+
+.header-child {
+    grid-area: header-child;
+}
+
+.small-1 {
+    grid-area: small-1;
+}
+
+.small-2 {
+    grid-area: small-2;
+}
+
+.small-3 {
+    grid-area: small-3;
+}
+
+.right {
+    grid-area: right;
+}

@@ -1,0 +1,13 @@
+@media screen and (min-width: 0px) and (max-width: 599px) {
+    .container {
+        grid-template-areas:
+            "header header header"
+            "header-child header-child header-child"
+            "small-1 small-2 small-3"
+            "right right right"
+        ;
+        grid-template-rows: 20fr 40fr 20fr 20fr;
+        grid-template-columns: 5fr 5fr 5fr;
+
+    }
+}

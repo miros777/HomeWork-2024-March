@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header, .left, .right {
+    background: #8E8E8E;
+    color: #4F504A;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    height: 28vh;
+    margin-bottom: 2vh;
+}
+
+/*.wrapper*/
+.wrapper{
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    width: 79vw;
+}
+
+.right {
+    width: 20vw;
+}

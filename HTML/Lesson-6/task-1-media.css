@@ -3,6 +3,13 @@
         grid-template-rows: 40vh;
         grid-template-columns: 23.5vw 23.5vw 23.5vw 23.5vw;
     }
+    article span{
+            transform: rotate(-90deg);
+            display: inline-block;
+            position: relative;
+            left: -20px;
+            top: 20px;
+    }
 }
 
 @media screen and (min-width: 0px) and (max-width: 599px) {
@@ -26,5 +33,10 @@
     nav ul li{
         text-align: center;
         margin-right: 0;
+    }
+    article span{
+        transform: none;
+        display: block;
+        position: static;
     }
 }

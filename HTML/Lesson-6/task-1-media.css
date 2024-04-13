@@ -1,0 +1,30 @@
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+    main {
+        grid-template-rows: 40vh;
+        grid-template-columns: 23.5vw 23.5vw 23.5vw 23.5vw;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 599px) {
+
+    main {
+        grid-template-rows: 90px 90px 90px 90px;
+        grid-template-columns: 100%;
+        flex-wrap: wrap;
+    }
+    header {
+        height: 39vh;
+        grid-template-rows: 19vh 20vh;
+        grid-template-columns: 100%;
+    }
+    nav ul {
+        grid-template-rows: 4vh 4vh 4vh 4vh;
+        grid-template-columns: 100%;
+        align-items: center;
+        row-gap: 1vh;
+    }
+    nav ul li{
+        text-align: center;
+        margin-right: 0;
+    }
+}
